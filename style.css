@@ -225,16 +225,41 @@ justify-content: space-around;
     background-image: url('https://www.corsenetinfos.corsica/photo/art/grande/41217034-34716223.jpg?v=1577655264');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 100vh;
+    margin-bottom: 5%;
 }
 .verre-content{
     margin-left: 15%;
-    margin-top: 5%;
+    margin-top: 25%;
     color: seashell;
     white-space: nowrap;
-    padding-top: 15em;
+    padding-top: 30em;
 }
 .verres>h3::before{
     content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
     color: red;
+}
+.carousel{
+    padding-bottom: 10%;
+}
+.carousel-content{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.carousel-content>div:hover{
+    border-top: 5px solid var(--bleu);
+    border-bottom: 5px solid var(--bleu);
+}
+.carousel-img{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+}
+.carousel-img-tt>img{
+    width: 50%;
+}
+.carousel-img-tt{
+    display: flex;
+    justify-content: center;
 }
