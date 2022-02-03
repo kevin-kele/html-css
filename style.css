@@ -1,33 +1,240 @@
-h1{
-color: blue;
-font-size: 2em;
-}
-ul{
-    display: inline-flex;
-    text-align: center;
-    padding: 2px;
+*{
     margin: 0;
-    list-style:none;
 }
-
-ul>li>a{
-    margin: 2rem;
+:root{
+    --bleu:#1e2949
 }
-
-.figure{
-display: flex;
-justify-content: center;
+header{
+    background-image: url('cover.jpg');
+    height: 65em;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.figure>img{
-    border: 10px solid black;
-}
-a:hover{
-    color: chartreuse;
-}
-.pos{
+.befor-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(226, 223, 223);
+    height: 3em;
     position: relative;
 }
-.absolute{
+.befor-nav-title{
+    text-align: center;
+    margin: auto;
+}
+.befor-nav-country{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1%;
+}
+.befor-nav-country>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.befor-nav-country>ul>li{
+    list-style: none;
+}
+.befor-nav-country>ul>li>a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--bleu);
+}
+.befor-nav-country>ul>li>a:after{
+    content: '^';
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+    width: 100%;
+}
+nav>ul>li{
+    margin-right: 2%;
+    list-style: none;
+    margin-top: 1%;
+}
+nav>ul>li>a{
+    text-decoration: none;
+}
+.img-top{
+    width: 10%;
     position: absolute;
-    font-size: 2em;
+}
+
+figure>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-right: 1%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    position: fixed;
+}
+.after-nav::before{
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    background-color: red;
+}
+.after-nav{
+    margin-top: 30%;
+    margin-left: 15%;
+    color: seashell;
+}
+.btn-btn{
+    padding: 1rem;
+    margin-top: 0.5%;
+}
+.btn-btn>a{
+text-decoration: none;
+font-size: 2em;
+}
+article{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.title-h2-red{
+    color: red;
+}
+.title-h2-red,.title-h2-sip{
+    display: flex;
+    justify-content: center;
+}
+.midle-head{
+display: flex;
+justify-content: space-around;
+}
+.left{
+    margin-right: 5%;
+}
+.left-img-1{
+    background-image: url('https://img-4.linternaute.com/qzZ-FLPk7BaQLpSAqK4N6cGWCGI=/1240x/smart/1961abdcba03427595b015443e5008a5/ccmcms-linternaute/10225457-08-serengeti-sunset-in-africa-alexey-protasov-fotoliacom.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+    width: 50rem;
+}
+.left-img-1>div{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 3%;
+    padding-bottom: 10%;
+}
+
+.left-img-1>div::before{
+    white-space: nowrap;
+    margin-top: auto;
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    color: red;
+   margin-left: 2%;
+
+}
+.left-img-2{
+    background-image: url('https://img-4.linternaute.com/qzZ-FLPk7BaQLpSAqK4N6cGWCGI=/1240x/smart/1961abdcba03427595b015443e5008a5/ccmcms-linternaute/10225457-08-serengeti-sunset-in-africa-alexey-protasov-fotoliacom.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50rem;
+}
+.left-img-2>div{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 3%;
+    padding-bottom: 10%;
+}
+
+.left-img-2>div::before{
+    white-space: nowrap;
+    margin-top: auto;
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    color: red;
+
+}
+
+.left-img-2:hover,.left-img-1:hover,.right-img-1:hover,.right-img-2:hover{
+    opacity:0.5;
+}
+
+.right-img-1{
+    background-image: url('https://www.dinardemeraudetourisme.com/wp-content/uploads/2021/06/lamourephoto-saint-briac-1948x1300.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50rem;
+}
+.right-img-1>div{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 3%;
+    padding-bottom: 10%;
+}
+
+.right-img-1>div::before{
+    white-space: nowrap;
+    margin-top: auto;
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    color: red;
+
+}
+
+.right-img-2{
+    background-image: url('https://www.dinardemeraudetourisme.com/wp-content/uploads/2021/06/lamourephoto-saint-briac-1948x1300.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50rem;
+    margin-top: 5%;
+}
+.right-img-2>div{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 3%;
+    padding-bottom: 10%;
+}
+
+.right-img-2>div::before{
+    white-space: nowrap;
+    margin-top: auto;
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    color: red;
+
+}
+.verres{
+    background-image: url('https://www.corsenetinfos.corsica/photo/art/grande/41217034-34716223.jpg?v=1577655264');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.verre-content{
+    margin-left: 15%;
+    margin-top: 5%;
+    color: seashell;
+    white-space: nowrap;
+    padding-top: 15em;
+}
+.verres>h3::before{
+    content: "♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥";
+    color: red;
 }
